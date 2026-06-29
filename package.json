@@ -1,0 +1,20 @@
+{
+  "name": "a-flow-runner",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Local-first attended browser-automation assistant with human-in-the-loop",
+  "scripts": {
+    "dev": "pnpm --filter @a-flow-runner/server dev",
+    "dev:web": "pnpm --filter @a-flow-runner/web dev",
+    "build": "pnpm --filter @a-flow-runner/shared build && pnpm --filter @a-flow-runner/web build && pnpm --filter @a-flow-runner/server build",
+    "typecheck": "tsc -b",
+    "start": "pnpm --filter @a-flow-runner/server start"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.0.8",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

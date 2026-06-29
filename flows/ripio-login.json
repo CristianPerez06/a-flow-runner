@@ -1,0 +1,235 @@
+{
+  "id": "0bf44099-fac1-4188-b4e0-79573175c807",
+  "name": "Recording of https://auth.ripio.com/#/login",
+  "createdAt": "2026-06-28T21:59:40.165Z",
+  "steps": [
+    {
+      "id": "s1",
+      "action": "goto",
+      "intent": "open https://auth.ripio.com/#/login",
+      "selectors": [],
+      "value": {
+        "type": "literal",
+        "value": "https://auth.ripio.com/#/login"
+      }
+    },
+    {
+      "id": "s3",
+      "action": "fill",
+      "selectors": [
+        {
+          "selector": "[data-testid=\"login_email_input\"]",
+          "kind": "data"
+        },
+        {
+          "selector": "#login_email_input",
+          "kind": "css"
+        },
+        {
+          "selector": "input[name=\"email\"]",
+          "kind": "css"
+        }
+      ],
+      "intent": "fill textbox",
+      "value": {
+        "type": "literal",
+        "value": "cristian.ap84@gmail.com"
+      }
+    },
+    {
+      "id": "s4",
+      "action": "fill",
+      "selectors": [
+        {
+          "selector": "[data-testid=\"login_password_input\"]",
+          "kind": "data"
+        },
+        {
+          "selector": "#login_password_input",
+          "kind": "css"
+        },
+        {
+          "selector": "input[name=\"password\"]",
+          "kind": "css"
+        }
+      ],
+      "intent": "fill textbox",
+      "requiresHumanInput": true
+    },
+    {
+      "id": "s5",
+      "action": "click",
+      "selectors": [
+        {
+          "selector": "[data-testid=\"login_submit_button\"]",
+          "kind": "data"
+        },
+        {
+          "selector": "#login_submit_button",
+          "kind": "css"
+        },
+        {
+          "selector": "role=button[name=\"Ingresar\"]",
+          "kind": "role"
+        },
+        {
+          "selector": "text=\"Ingresar\"",
+          "kind": "text"
+        }
+      ],
+      "intent": "click \"Ingresar\""
+    },
+    {
+      "id": "s6",
+      "action": "click",
+      "selectors": [
+        {
+          "selector": "#mfa_method_select > div:nth-child(1) > label:nth-child(2) > span:nth-child(3)",
+          "kind": "css"
+        }
+      ],
+      "intent": "click \"App de códigos externa (Google Authenticator, Authy, etc.)\""
+    },
+    {
+      "id": "s7",
+      "action": "click",
+      "selectors": [
+        {
+          "selector": "#mfa_method_b3RwX3RvdHAudG90cGRldmljZS81ODg3OTI",
+          "kind": "css"
+        },
+        {
+          "selector": "input[name=\"mfa-method\"]",
+          "kind": "css"
+        },
+        {
+          "selector": "role=radio[name=\"App de códigos externa (Google Authenticator, Authy, etc.)\"]",
+          "kind": "role"
+        }
+      ],
+      "intent": "click \"App de códigos externa (Google Authenticator, Authy, etc.)\""
+    },
+    {
+      "id": "s8",
+      "action": "click",
+      "selectors": [
+        {
+          "selector": "[data-testid=\"mfa_method_submit_button\"]",
+          "kind": "data"
+        },
+        {
+          "selector": "#mfa_method_submit_button",
+          "kind": "css"
+        },
+        {
+          "selector": "role=button[name=\"Continuar\"]",
+          "kind": "role"
+        },
+        {
+          "selector": "text=\"Continuar\"",
+          "kind": "text"
+        }
+      ],
+      "intent": "click \"Continuar\""
+    },
+    {
+      "id": "s10",
+      "action": "fill",
+      "selectors": [
+        {
+          "selector": "[data-testid=\"mfa_otp_input_1\"]",
+          "kind": "data"
+        },
+        {
+          "selector": "#mfa_otp_input_1",
+          "kind": "css"
+        }
+      ],
+      "intent": "enter the 6-digit OTP code",
+      "requiresHumanInput": true,
+      "value": {
+        "type": "prompt",
+        "label": "Enter the 6-digit OTP code from your authenticator app"
+      },
+      "segments": [
+        [
+          { "selector": "[data-testid=\"mfa_otp_input_1\"]", "kind": "data" },
+          { "selector": "#mfa_otp_input_1", "kind": "css" }
+        ],
+        [
+          { "selector": "[data-testid=\"mfa_otp_input_2\"]", "kind": "data" },
+          { "selector": "#mfa_otp_input_2", "kind": "css" }
+        ],
+        [
+          { "selector": "[data-testid=\"mfa_otp_input_3\"]", "kind": "data" },
+          { "selector": "#mfa_otp_input_3", "kind": "css" }
+        ],
+        [
+          { "selector": "[data-testid=\"mfa_otp_input_4\"]", "kind": "data" },
+          { "selector": "#mfa_otp_input_4", "kind": "css" }
+        ],
+        [
+          { "selector": "[data-testid=\"mfa_otp_input_5\"]", "kind": "data" },
+          { "selector": "#mfa_otp_input_5", "kind": "css" }
+        ],
+        [
+          { "selector": "[data-testid=\"mfa_otp_input_6\"]", "kind": "data" },
+          { "selector": "#mfa_otp_input_6", "kind": "css" }
+        ]
+      ]
+    },
+    {
+      "id": "s21",
+      "action": "click",
+      "selectors": [
+        {
+          "selector": "[data-testid=\"mfa_submit_button\"]",
+          "kind": "data"
+        },
+        {
+          "selector": "#mfa_submit_button",
+          "kind": "css"
+        },
+        {
+          "selector": "role=button[name=\"Continuar\"]",
+          "kind": "role"
+        },
+        {
+          "selector": "text=\"Continuar\"",
+          "kind": "text"
+        }
+      ],
+      "intent": "click \"Continuar\""
+    },
+    {
+      "id": "s22",
+      "action": "goto",
+      "selectors": [],
+      "intent": "open the magic-link URL built from the emailed token",
+      "value": {
+        "type": "promptTemplate",
+        "label": "Check your email and paste ONLY the magic-link token (the UUID at the end of the link)",
+        "template": "https://auth.ripio.com/authentication/complete-login/{}/"
+      }
+    },
+    {
+      "id": "s23",
+      "action": "assert",
+      "selectors": [
+        {
+          "selector": "text=\"Welcome CRISTIAN ADRIAN\"",
+          "kind": "text"
+        },
+        {
+          "selector": "[data-testid=\"topnav_welcome\"]",
+          "kind": "data"
+        },
+        {
+          "selector": "#topnav_welcome",
+          "kind": "css"
+        }
+      ],
+      "intent": "verify \"Welcome CRISTIAN ADRIAN\" is visible"
+    }
+  ]
+}

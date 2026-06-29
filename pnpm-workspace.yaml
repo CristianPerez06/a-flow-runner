@@ -1,0 +1,14 @@
+packages:
+  - shared
+  - server
+  - web
+
+# Dependencies allowed to run install/build scripts (pnpm blocks these by
+# default). keytar is a native module (OS keychain); esbuild powers Vite.
+allowBuilds:
+  esbuild: true
+  keytar: true
+
+onlyBuiltDependencies:
+  - esbuild
+  - keytar
